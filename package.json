@@ -1,13 +1,32 @@
 {
+  "name": "CarlosHerbertDev/my-first-mcp",
+  "version": "1.0.0",
+  "description": "Meu primeiro servidor MCP, com a tool greet",
   "type": "module",
+  "license": "MIT",
+  "keywords": ["mcp", "model-context-protocol"],
+  "bin": {
+    "my-first-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "tsx index.ts",
+    "build": "tsc && chmod +x dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
   "dependencies": {
     "@modelcontextprotocol/server": "^2.2.0",
     "express": "^5.2.1",
-    "nvm": "^0.0.4",
     "zod": "^4.6.5"
   },
   "devDependencies": {
     "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   }
 }
