@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.2.0",
+    "express": "^5.2.1",
+    "nvm": "^0.0.4",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
